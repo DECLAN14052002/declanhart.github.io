@@ -1,0 +1,122 @@
+*{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+.banner{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)) ;
+background-size:cover ;
+background-position: center;
+}
+.navbar{
+width: 100%;
+margin: auto;
+padding: 35px 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover ::after{
+width: 100%;
+}
+.navbar.current {
+    background-color: aliceblue;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+margin: 20px auto;
+font-weight:100;
+line-height:25px;
+}
+
+/*------- Welcome -----*/
+.Welcome{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight:600;
+}
+p{
+    color:rgb(44, 42, 42);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+/* Set the background image and styles for the background */
+.background-image {
+    background-image: 'images/water.jpg'; /* Path to your background image */
+    background-size: cover; /* Adjust how the background image is displayed */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    height: 100vh; /* Set the height to cover the entire viewport */
+}
+h2{
+    color: rgb(128, 126, 126);
+}
+
+/* Styles for the content on top of the background */
+.content {
+    text-align: center; /* Adjust text alignment as needed */
+    color: white; /* Text color on top of the background image */
+    padding: 20px; /* Add padding to the content */
+}
+/* Style for the profile image */
+.image-pfp {
+    float: left; /* Float the image to the left of the text */
+    margin-right: 20px; /* Add a semicolon to terminate the margin-right property */
+    max-height: 600px;
+    max-width: 400px; /* Add some margin for spacing */
+}
+
+/* Clear the float to prevent layout issues */
+.Welcome::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
